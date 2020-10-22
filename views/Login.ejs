@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="Stylesheet/Style.css">
+    <title>Login | Blog</title>
+</head>
+<body> 
+    <%- include('partials/Navbar') %>
+    
+    <div class="login-form">
+        <%- include('partials/message') %>
+
+        <h1 class="Login-heading">Login Form</h1>
+        <form method="POST" action = "/login">
+            <div class="form-element">
+                <input type="text" name = "username" placeholder="username">
+            </div>
+            <div class="form-element">
+                <input type="password"  name = "password" placeholder="password">
+            </div>
+            <div class="row">
+                <div>
+                    <input type="submit" value="submit" readonly>
+                </div>
+            </div>
+        </form>
+        <div>
+            <a href ="/register"><button>Register</button></a>
+        </div>
+    </div>    
+</body>
+</html>

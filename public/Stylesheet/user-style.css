@@ -1,0 +1,236 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color:rgb(99, 80, 59);
+    position: sticky;
+    top: 0px;
+    opacity: 0.8;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    font-size: 22px;
+}
+.logo img{
+    height: 55px;
+    width: 330px;
+    border: 1px black solid;
+    margin-top: 2.5px;
+}
+.navbar li{
+    list-style:none;
+}
+.navbar li:hover{
+    border-bottom: 1px solid black;
+}
+.navbar li a{
+    color:rgb(10, 10, 44);
+    text-decoration: none;
+    transition: color 0.25s;
+    letter-spacing: 1px;
+    margin-left: 7px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.navbar li a:hover{
+    color: rgb(222, 224, 230);
+}
+
+.navbar-toggle {
+  display: none;
+}
+@media screen and (max-width: 1100px){
+  .navbar {
+    list-style-type: none;
+    display: none;
+  }
+  .navbar li {
+    text-align: center;
+    margin:12px auto;  
+  }
+  .navbar li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  }
+  .navbar-toggle {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+  }
+
+  .navbar-toggle span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #151719;
+    margin: 5px auto;
+  }
+
+  .active{
+    display:block;
+    top: 150px;
+    right: 50px;
+  }
+}
+/* Home page for V-Blog User*/
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.box{
+    /*flex: 1 1 300px;
+    flex: 0 1 300px;
+    margin: 45px;*/
+    margin: auto;
+    margin-top: 10px;
+    width: 50%;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.blog #topic{
+    font-size: 28px;
+    margin: 15px;
+    margin-bottom: 10px;
+}
+.blog #content{
+    border: 1px solid black;
+    margin: 10px;
+    text-align: center;
+    display: grid;
+    border-radius: 4px;
+    /*width: 96.5%;
+    height: 300px;*/
+}
+
+/* Add a blog*/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #010502;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #fafafa;
+  }
+  
+  .container {
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 65%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  /* Profile page css is here */
+  .general-form {
+    width: 46%;
+    margin: 0 auto;
+    margin-top: 35px;
+    font-family: Tahoma, sans-serif;
+    border: 1px solid rgb(28, 28, 71);
+    border-radius: 7px;
+    padding: 35px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .grid-prof{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .row {
+    margin: 3px;
+    padding: 3px;
+    margin-bottom: auto;
+  }
+  .col {
+    margin: 3px;
+    padding: 3px;
+    margin-top: auto;
+  }
+
+  .btn {
+    text-align: center;
+    padding: 10px;
+  }
+  button{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(150, 125, 125);
+  }
+  button:hover{
+    background-color: rgb(53, 52, 52);
+    color: white;
+  }
+  h1{
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Lobster', cursive;
+  }

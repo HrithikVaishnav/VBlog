@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="Stylesheet/user-style.css">
+    <title>Profile | Blog</title>
+</head>
+<body>
+    <%- include('partials/user-navbar') %>
+    <h1>My Details</h1>
+        <div class="grid-prof general-form">
+            <div class="row">
+                 <label for="name">Name</label>
+            </div>
+            <div class="col">
+                <input type="text" id="name" value="<%= username %>" readonly>
+            </div>
+            <div class="row">
+                <label for="email">Email</label>
+            </div>
+            <div class="col">
+                <input type="text" id="email" value="<%= email %>" readonly>
+            </div>
+        </div>
+        <div class="btn">
+            <a href ="/profileedit"><button>Edit Profile</button></a>
+            <a href ="/profilechangepass"><button>Change Password</button></a>
+        </div> 
+
+    <h1>My Blogs</h1>
+    <div class="blog">
+        <% blogs.forEach(blog => { %>
+            <div class="box">
+                <h1 id="topic">Topic <%= blog.title %></h1>
+                <div id="content"><%= blog.Content %></div>
+            </div>
+        <% }) %>
+    </div>
+
+     
+</body>
+</html>

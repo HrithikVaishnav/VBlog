@@ -1,0 +1,126 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url('../Images/writing1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color:rgb(99, 80, 59);
+    position: sticky;
+    opacity: 0.8;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    font-size: 22px;
+}
+.logo img{
+    height: 55px;
+    width: 330px;
+    border: 1px black solid;
+    margin-top: 2.5px;
+}
+.navbar li{
+    list-style:none;
+}
+.navbar li:hover{
+    border-bottom: 1px solid black;
+}
+.navbar li a{
+    color:rgb(10, 10, 44);
+    text-decoration: none;
+    transition: color 0.25s;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.navbar li a:hover{
+    color: rgb(222, 224, 230);
+}
+/*h1{
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}*/
+.Home-heading {
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 200px;
+    font-size: 35px;
+    color: rgb(107, 28, 28);
+    font-family: 'Lobster', cursive;
+}
+p{
+    text-align: center;
+    margin: 0px auto;
+    font-size: 24px;
+    color: rgb(10, 8, 6);
+    font-family: 'Piedra', cursive;
+}
+.login-form {
+    width: 300px;
+    padding: 30px;
+    margin: 100px auto;
+    font-family: Tahoma, sans-serif;
+   /* background-color: rgb(168, 150, 157);*/
+    background-color: #cccccc;
+    border: black 1px solid;
+    border-radius: 5px;
+    box-shadow: 5px 10px 8px 8px #888888;
+}
+.Login-heading {
+    text-align: center;
+    color: #4d4d4d;
+    font-size: 28px;
+    padding: 20px 0 20px 0;
+    font-family: 'Lobster', cursive;
+
+}
+.login-form input[type="password"],
+.login-form input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    margin-bottom: 15px;
+    box-sizing:border-box;
+}
+.row{
+   /* display: grid;
+    grid-template-columns: 1fr 1fr;*/
+    display: flex;
+    justify-content: space-evenly;
+}
+.login-form input[type="submit"] {
+    width: 130%;
+    padding: 15px;
+    /*margin-left: 10px;*/
+    background-color: #535b63;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    /*align-items: center;*/
+}
+.login-form input[type="register"],
+.login-form input[type="login"] {
+    padding: 15px;
+    padding-left: 35px;
+    margin-right: 10px;
+    background-color: #535b63;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    float: right;
+}

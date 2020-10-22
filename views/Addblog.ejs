@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="Stylesheet/user-style.css">
+    <title>Profile | Blog</title>
+</head>
+<body>
+    <%- include('partials/user-navbar') %>
+    <div class="container">
+      <%- include('partials/message') %>
+
+        <form action="/Addblog" method="POST">
+          <div class="row">
+            <div class="col-25">
+              <label for="topic">Username</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="username" name="username" value="<%= username %>">
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-25">
+                <label for="topic">Topic</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="title" name="title" placeholder="Topic">
+              </div>
+          </div>
+           
+    
+          <div class="row">
+            <div class="col-25">
+              <label for="keywords">Keywords</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="Keywords" name="Keywords" placeholder="keywords">
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Describtion</label>
+            </div>
+            <div class="col-75">
+              <textarea id="Content" name="Content" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+      
+     
+</body>
+</html>

@@ -1,0 +1,29 @@
+<nav>
+    
+    <div class=logo>
+        <h4><img src="Images/Logo.PNG" alt=""></h4>
+    </div>
+    <div class="navbar-toggle" id="navbar-toggle" onclick="togglenav()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+        <ul class="navbar" id="menu">
+            <li><%= username %></li>
+            <li><a href="/profile">Blog</a></li>
+            <li><a href="/addblog">Write-Blog</a></li>
+            <li><a href="/user-profile">Profile</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+  
+</nav>
+<script>
+    function togglenav(){
+        let mainNav = document.getElementById('menu');
+        let navBarToggle = document.getElementById('navbar-toggle');
+        //navBarToggle.addEventListener('click', function () {
+        mainNav.classList.toggle('active');
+        //});
+    }
+    
+</script>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="Stylesheet/Style.css">
+    <title>Register | Blog</title>
+</head>
+<body> 
+    <%- include('partials/Navbar') %>
+    
+    <div class="login-form">
+        <%- include('partials/message') %>
+
+        <h1 class="Login-heading">Register Form</h1>
+        <form method="POST" action="/register">
+            <div class="form-element">
+                <label for="username">Username</label>
+                <input type="text" id="Username" name="Username" placeholder="Username">
+            </div>
+            <div class="form-element">
+                <label for="email">Email</label>
+                <input type="text"  id="Email" name="Email" placeholder="Email">
+            </div>
+            <div class="form-element">
+                <label for="password">Password</label>
+                <input type="password"  id="Password" name="Password">
+            </div>
+            <div class="form-element">
+                <label for="password">Confirm-Password</label>
+                <input type="password"  name="cpassword">
+            </div>
+            <div class="row">
+                <div>
+                    <input type="submit" value="submit" formaction="/register" readonly>
+                </div>
+            </div>
+        </form>
+        <div>
+            <a href ="/login"><button>Login</button></a>
+        </div>
+    </div>    
+</body>
+</html>

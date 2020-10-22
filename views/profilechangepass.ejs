@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="Stylesheet/user-style.css">
+    <title>Profile | Blog</title>
+</head>
+<body>
+    <%- include('partials/user-navbar') %>
+    <h1>Change Password</h1>
+    <form action="/profilechangepass" method="POST">
+        <div class="grid-prof general-form">
+            <div class="row">
+                 <label for="name">Username</label>
+            </div>
+            <div class="col">
+                <input type="text" name="username" value="<%= username %>">
+            </div>
+            <div class="row">
+                <label for="email">New Password</label>
+            </div>
+            <div class="col">
+                <input type="text" name="newpassword" value="">
+            </div>
+            <div class="row">
+                <label for="email">Confirm Password</label>
+            </div>
+            <div class="col">
+                <input type="text" name="conpassword" value="">
+            </div>
+        </div>
+        <div class="btn">
+            <button>Submit</button>
+        </div> 
+    </form>
+
+
+     
+</body>
+</html>
