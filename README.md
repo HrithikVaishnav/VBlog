@@ -1,2 +1,0 @@
-# VBlog
-A Blogging website.
