@@ -28,16 +28,14 @@
             <a href ="/profilechangepass"><button>Change Password</button></a>
         </div> 
 
-    <h1>My Blogs</h1>
-    <div class="blog">
-        <% blogs.forEach(blog => { %>
-            <div class="box">
-                <h1 id="topic">Topic <%= blog.title %></h1>
-                <div id="content"><%= blog.Content %></div>
-            </div>
-        <% }) %>
-    </div>
-
-     
+        <h1>My Blogs</h1>
+        <div class="blog">
+            <% blogs.forEach(blog => { %>
+                <div class="box">
+                    <h1 id="topic">Topic : <%= blog.title %></h1>
+                    <div id="content"><%= blog.Content %></div>
+                </div>
+            <% }) %>
+        </div>     
 </body>
 </html>

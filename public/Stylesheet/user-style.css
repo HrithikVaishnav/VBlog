@@ -120,6 +120,9 @@ nav{
     height: 300px;*/
 }
 
+.blog #writer{
+  font-size:20px;
+}
 /* Add a blog*/
 
 input[type=text], select, textarea {
