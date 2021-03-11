@@ -2,16 +2,16 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const flash = require('connect-flash');
+const dotenv = require("dotenv");
 const session = require('express-session');
 const passport = require('passport');
 const User = require('./models/User');
 const Blog = require('./models/Blog');
-const e = require('express');
 const app = express();
 
 // Passport config 
 require('./config/passport')(passport);
-
+dotenv.config();
 //DB 
 const dbURL = require('./config/keys').mongoURI;
 
